@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress_container{
+            height: 25px;
+            width: 90%;
+            background-color: bisque;
+            border: 2px black solid ;
+            border-radius: 20px;
+            position: relative;
+            left: 4%;
+        }
+        .progress_bar{
+            background-color: greenyellow;
+            height: 100%;
+            width: 50%;
+            border-radius: 20px;
+            animation: animate 3s ;
+        }
+        @keyframes animate {
+            0%{width: 0%;}
+            90%{width: 95%;}
+            95%{width: 70%;}
+            100%{width: 100%;}     
+        }
+    </style>
+</head>
+<body>
+    <div class="progress_container">
+        <div class="progress_bar"></div>
+    </div>
+</body>
+</html>
